@@ -10,7 +10,7 @@ This repository contains the research project code for developing and evaluating
 
 The primary goal of this research is to develop a reliable classifier that, given the data from an ATE failure event, predicts the probability that the failure is a False Positive.
 
-Specific Objectives:
+### Specific Objectives:
 
 1.  Prepare and preprocess ATE test log data, focusing on instances where a DUT failed testing.
 2.  Develop, train, and tune two distinct classification models:
@@ -22,7 +22,19 @@ Specific Objectives:
 
 **Important Note:** This system is intended as a **decision-support tool** to provide recommendations, *not* to automatically assign a "Pass" state to a DUT.
 
-## 📊 Dataset
+<!--- ## Technology Stack
+
+*   **Language:** Python 3.x
+*   **Core Libraries:**
+    *   Pandas: Data manipulation and analysis.
+    *   NumPy: Numerical operations.
+    *   Scikit-learn: Machine Learning (Random Forest, preprocessing, metrics, cross-validation).
+    *   TensorFlow / Keras: Deep Learning (MLP implementation).
+    *   Imbalanced-learn (optional): Handling class imbalance (e.g., SMOTE).
+    *   Matplotlib / Seaborn: Data visualization (e.g., plotting curves, confusion matrices).
+*   **Environment Management:** `venv` or `conda`.  -->
+
+## Dataset
 
 The models are trained on historical ATE test logs containing results for multiple DUTs.
 
