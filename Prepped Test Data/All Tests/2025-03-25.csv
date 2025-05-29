@@ -1,0 +1,16 @@
+Test Start Time,Test End Time,Result,Failed Test Case,False Positive
+10:24:31,10:24:43,T,,1
+10:25:04,10:26:43,F,Check Zone1 Response 2,1
+12:07:21,12:12:20,F,Check Input1 SC,1
+13:54:58,13:55:13,T,,1
+13:55:33,13:56:03,T,,1
+13:56:31,13:57:46,F,Model Check: 4 zone tested on 2 zone sequence...PLEASE  RETEST,1
+13:58:21,14:00:13,F,Check Zone1 Response 2,1
+14:00:48,14:02:32,F,Check Zone1 Response 2,1
+14:17:44,14:19:24,F,Voltage Check +32v,0
+14:20:25,14:22:07,F,Voltage Check +32v,0
+14:23:04,14:26:14,F,Backlight Test Failed,1
+14:35:43,14:37:02,F,Voltage Check +32v,0
+15:34:41,15:38:16,F,Start Key Tests,0
+15:39:09,15:43:47,F,Measure NC Terminal FIRE,0
+16:18:15,16:21:29,F,Start Key Tests,0

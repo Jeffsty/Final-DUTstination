@@ -1,0 +1,6 @@
+Test Start Time,Test End Time,Result,Failed Test Case,False Positive
+09:27:05,09:32:17,T,,1
+10:07:03,10:12:34,F,Check Input1 SC,1
+10:49:46,10:53:38,F,Check Key Switch ON,1
+12:52:08,12:56:58,F,Check Input1 SC,1
+13:20:44,13:24:42,F,Check Input2 SC,1

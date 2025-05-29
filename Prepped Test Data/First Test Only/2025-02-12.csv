@@ -1,0 +1,12 @@
+Test Start Time,Test End Time,Result,Failed Test Case,False Positive
+08:11:44,08:16:02,F,Reset LCD Test Mode,1
+09:13:54,09:19:17,F,Check Input1 SC,1
+10:11:30,10:12:21,F,Start Key Tests,0
+11:04:05,11:04:12,T,,1
+11:36:35,11:41:29,T,,1
+11:54:05,11:54:15,T,,1
+12:46:19,12:48:05,F,Silence Alarms Key,1
+13:40:29,13:44:13,F,Check Key Switch ON,1
+14:19:22,14:22:52,F,Silence Alarms Key,1
+14:30:24,14:34:24,F,Start Earth Voltage Test,1
+15:24:59,15:27:40,F,Silence Alarms Key,1

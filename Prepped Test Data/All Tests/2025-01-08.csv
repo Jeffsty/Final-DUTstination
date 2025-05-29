@@ -1,0 +1,5 @@
+Test Start Time,Test End Time,Result,Failed Test Case,False Positive
+09:48:35,09:53:56,F,Check Input1 SC,1
+10:51:56,10:57:08,F,Check Input1 SC,1
+11:45:16,11:45:24,T,,1
+16:07:15,16:12:44,F,Reset LCD Test Mode,1

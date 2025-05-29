@@ -1,0 +1,14 @@
+Test Start Time,Test End Time,Result,Failed Test Case,False Positive
+08:11:43,08:14:10,F,Silence Alarms Key,0
+08:37:37,08:37:43,F,Resistance Measure +3V3,0
+09:05:38,09:08:43,F,Check Expansion Inputs RX7 LO,1
+09:24:05,09:25:33,F,Start Key Tests,0
+10:29:00,10:31:50,F,Buzzer Test Failed,1
+11:14:32,11:17:45,F,Check Expansion Inputs RX6 HI,1
+12:13:06,12:13:16,T,,1
+13:46:39,13:47:37,F,Start Key Tests,0
+14:15:38,14:18:17,F,Measure ZEN7,1
+14:38:49,14:42:25,F,Start Key Tests,1
+15:39:33,15:42:10,F,Silence Alarms Key,1
+15:57:16,16:03:48,F,Check Input1 SC,1
+16:32:28,16:38:07,F,Check Input1 SC,1

@@ -1,0 +1,11 @@
+Test Start Time,Test End Time,Result,Failed Test Case,False Positive
+08:33:55,08:38:05,F,Silence Alarms Key,1
+08:48:13,08:53:17,F,Check Input1 SC,1
+09:43:10,09:48:28,F,Reset LCD Test Mode,1
+10:23:00,10:24:02,F,Load Shipping Code,0
+10:25:26,10:26:34,F,Start Key Tests,0
+10:26:40,10:29:41,F,Check Output Test Response 2,0
+10:46:19,10:46:25,T,,1
+11:03:28,11:05:18,F,RS485 COMMS CHECK,1
+12:42:22,12:44:49,F,RS485 COMMS CHECK,1
+15:35:01,15:35:32,T,,1

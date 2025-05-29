@@ -1,0 +1,13 @@
+Test Start Time,Test End Time,Result,Failed Test Case,False Positive
+09:19:28,09:25:19,F,Check Input1 SC,1
+09:32:18,09:34:54,F,Right Key,0
+10:45:28,10:45:36,T,,0
+11:03:35,11:08:00,F,LED Test Failed,0
+11:10:47,11:13:47,F,LED Test Failed,1
+11:13:56,11:16:54,F,LED Test Failed,1
+11:16:58,11:21:20,F,LED Test Failed,1
+11:41:05,11:44:41,T,,1
+13:59:19,14:03:26,F,Backlight Test Failed,1
+14:56:53,14:59:04,F,Backlight Test Failed,0
+15:07:54,15:11:41,F,Backlight Test Failed,0
+16:12:00,16:16:15,T,,1

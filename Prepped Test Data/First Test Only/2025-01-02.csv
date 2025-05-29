@@ -1,0 +1,12 @@
+Test Start Time,Test End Time,Result,Failed Test Case,False Positive
+08:27:54,08:31:45,F,Reset LCD Test Mode,1
+09:22:46,09:22:54,T,,1
+09:48:53,09:57:39,F,Measure Aux On: If Fail unit not programmed,1
+10:11:45,10:13:28,F,Silence Alarms Key,0
+11:09:31,11:15:10,F,Silence Alarms Key,1
+11:56:24,11:56:33,T,,1
+12:06:35,12:17:55,F,Check Write Enable Switch Off,1
+12:37:36,12:39:59,F,Start Key Tests,1
+12:47:59,12:53:03,F,Voltage Check +3V3,0
+14:19:58,14:20:59,F,RS485 COMMS CHECK,1
+16:12:17,16:12:51,T,,1

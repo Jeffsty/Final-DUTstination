@@ -1,0 +1,18 @@
+Test Start Time,Test End Time,Result,Failed Test Case,False Positive
+08:29:16,08:30:19,F,RS485 COMMS CHECK,1
+10:06:52,10:11:07,T,,0
+10:11:48,10:13:57,T,,0
+10:44:16,10:52:23,F,Voltage Check +3V3,0
+10:53:22,10:56:53,F,Voltage Check +3V3,0
+12:07:28,12:11:52,F,Silence Alarms Key,0
+12:37:39,12:40:11,F,Check Expansion Inputs RX5 HI,0
+13:26:14,13:27:47,F,Start Key Tests,1
+13:53:17,13:56:50,F,Silence Alarms Key,1
+13:57:33,13:58:58,F,Silence Alarms Key,1
+13:59:58,14:00:59,F,RS485 COMMS CHECK,1
+14:32:40,14:35:51,F,Reset LCD Test Mode,1
+14:44:43,14:50:10,F,Silence Alarms Key,1
+15:04:09,15:06:13,F,Model Check: 4 zone tested on 2 zone sequence...PLEASE  RETEST,1
+16:00:45,16:06:58,F,Check Input1 SC,1
+16:07:49,16:11:11,F,Reset LCD Test Mode,1
+16:33:49,16:36:22,F,Model Check: 4 zone tested on 2 zone sequence...PLEASE  RETEST,1

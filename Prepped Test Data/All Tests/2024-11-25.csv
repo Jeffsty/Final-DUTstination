@@ -1,0 +1,9 @@
+Test Start Time,Test End Time,Result,Failed Test Case,False Positive
+09:18:00,09:18:57,F,RS485 COMMS CHECK,1
+11:24:57,11:25:15,T,,1
+12:10:48,12:11:47,F,RS485 COMMS CHECK,0
+12:15:31,12:16:25,F,RS485 COMMS CHECK,0
+12:26:57,12:28:49,F,Start Key Tests,1
+13:00:50,13:03:20,F,Start Earth Voltage Test,1
+15:19:35,15:19:43,T,,1
+15:51:53,15:56:25,F,Check Key Switch ON,1

@@ -1,0 +1,6 @@
+Test Start Time,Test End Time,Result,Failed Test Case,False Positive
+10:01:03,10:08:38,F,Battery Test Failed,1
+11:29:46,11:37:37,F,Measure Aux On: If Fail unit not programmed,1
+13:07:39,13:09:36,F,Start Key Tests,0
+14:07:29,14:10:34,F,Set Buzzer Off,1
+15:00:02,15:01:03,F,RS485 COMMS CHECK,1

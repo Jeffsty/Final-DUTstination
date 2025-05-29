@@ -1,0 +1,9 @@
+Test Start Time,Test End Time,Result,Failed Test Case,False Positive
+08:45:03,08:50:54,F,Start Key Tests,1
+10:07:41,10:07:53,T,,1
+10:49:06,10:55:38,F,Check Key Switch ON,1
+11:14:35,11:15:39,F,RS485 COMMS CHECK,1
+12:02:46,12:02:53,T,,1
+12:22:37,12:27:55,F,Check Key Switch ON,1
+14:07:04,14:13:17,F,Check Output Test Response 1,1
+14:42:31,14:43:33,F,RS485 COMMS CHECK,0

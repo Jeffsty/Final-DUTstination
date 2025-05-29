@@ -1,0 +1,7 @@
+Test Start Time,Test End Time,Result,Failed Test Case,False Positive
+08:23:11,08:27:07,F,Check Key Switch ON,1
+09:17:44,09:21:07,F,Backlight Test Failed,1
+12:05:31,12:11:23,F,Check Input1 SC,1
+12:54:21,12:56:55,F,Backlight Test Failed,1
+15:15:10,15:16:53,F,Model Check: 4 zone tested on 2 zone sequence...PLEASE  RETEST,1
+16:29:50,16:35:45,F,Check Input1 SC,1

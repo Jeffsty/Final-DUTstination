@@ -1,0 +1,7 @@
+Test Start Time,Test End Time,Result,Failed Test Case,False Positive
+09:47:49,09:49:15,F,Model Check: 4 zone tested on 2 zone sequence...PLEASE  RETEST,1
+13:18:05,13:20:57,F,Voltage Check +3V3,1
+13:51:42,13:52:42,F,RS485 COMMS CHECK,1
+14:23:28,14:25:14,F,Silence Alarms Key,1
+16:18:01,16:22:00,F,Reset LCD Test Mode,1
+16:22:03,16:25:00,F,Measure TXCHSEL5,1

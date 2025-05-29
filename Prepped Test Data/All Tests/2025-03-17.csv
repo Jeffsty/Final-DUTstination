@@ -1,0 +1,4 @@
+Test Start Time,Test End Time,Result,Failed Test Case,False Positive
+10:38:30,10:42:23,F,Check Key Switch ON,1
+13:29:14,13:32:04,F,End LED Test,1
+15:13:21,15:14:22,F,RS485 COMMS CHECK,1

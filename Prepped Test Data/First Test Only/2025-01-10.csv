@@ -1,0 +1,9 @@
+Test Start Time,Test End Time,Result,Failed Test Case,False Positive
+08:26:32,08:27:47,F,RS485 COMMS CHECK,0
+09:43:40,09:48:32,F,Start Key Tests,0
+10:16:11,10:22:01,F,Check Input1 SC,1
+10:47:38,10:53:46,F,Check Output Test Response 1,0
+11:09:59,11:13:05,F,Start Key Tests,1
+12:21:47,12:25:32,F,Silence Alarms Key,1
+13:18:25,13:23:49,F,Voltage Check +3V3,0
+13:32:31,13:37:17,F,1 Key,1
