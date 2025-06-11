@@ -1,0 +1,30 @@
+[
+    {
+        "id": "20cf9147-7040-4b8e-9476-654299b495d8",
+        "title": "Grocery Shopping",
+        "description": "Buy milk, eggs, bread, and cheese for the week.",
+        "assigned_to": "Mom",
+        "status": "Pending"
+    },
+    {
+        "id": "5247ecd9-39da-4ac0-bab7-7bacdcc6b22b",
+        "title": "Walk the Dog",
+        "description": "Morning walk in Central Park. Don't forget the leash!",
+        "assigned_to": "Kid 1",
+        "status": "In Progress"
+    },
+    {
+        "id": "a6e63e8a-e313-43e2-9faa-cec72a667b24",
+        "title": "Pay Bills",
+        "description": "Electricity and internet bills due this Friday.",
+        "assigned_to": "Dad",
+        "status": "Completed"
+    },
+    {
+        "id": "265b5904-06c9-412a-ae3c-852053006d9f",
+        "title": "Plan Weekend Trip",
+        "description": "Research destinations and book accommodation.",
+        "assigned_to": "Anyone",
+        "status": "Pending"
+    }
+]

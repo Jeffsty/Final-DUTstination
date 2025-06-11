@@ -1,6 +1,4 @@
-Test Start Time,Test End Time,Result,Failed Test Case,False Positive
-08:37:45,08:42:44,F,Reset LCD Test Mode,1
-11:12:25,11:16:56,F,Reset LCD Test Mode,1
-15:12:48,15:12:54,T,,1
-15:34:38,15:34:52,T,,0
-15:49:39,15:51:25,F,Start Key Tests,1
+Test Start Time,Test End Time,Result,Failed Test Case,Day of Week,Month,Hour,False Positive
+08:37:45,08:42:44,F,Reset LCD Test Mode,Thursday,October,08,1
+11:12:25,11:16:56,F,Reset LCD Test Mode,Thursday,October,11,1
+15:49:39,15:51:25,F,Start Key Tests,Thursday,October,15,1
