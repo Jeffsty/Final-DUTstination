@@ -114,7 +114,6 @@ Test Start Time,Test End Time,Result,Failed Test Case,Day of Week,Month,Hour,Fal
 08:18:06,08:21:04,F,Check Continuity Z5 To Z8,Wednesday,March,8,0
 14:37:51,14:44:32,F,Check Input1 SC,Wednesday,March,14,1
 14:58:19,15:03:46,F,Check Input1 SC,Wednesday,March,14,1
-16:04:39,16:06:36,E,,Wednesday,March,16,0
 16:08:29,16:10:17,F,RS485 COMMS CHECK,Wednesday,March,16,0
 16:10:24,16:11:16,F,RS485 COMMS CHECK,Wednesday,March,16,0
 10:25:04,10:26:43,F,Check Zone1 Response 2,Tuesday,March,10,1
@@ -181,8 +180,6 @@ Test Start Time,Test End Time,Result,Failed Test Case,Day of Week,Month,Hour,Fal
 08:34:59,08:40:37,F,Measure NC Terminal FIRE,Thursday,March,8,1
 09:25:46,09:27:50,F,Voltage Check +3V3,Thursday,March,9,1
 09:30:19,09:32:12,F,Start Key Tests,Thursday,March,9,1
-11:26:48,11:28:15,E,,Thursday,March,11,1
-11:29:12,11:30:46,E,,Thursday,March,11,1
 12:08:18,12:11:34,F,Start Key Tests,Thursday,March,12,1
 12:21:06,12:24:23,F,Start Key Tests,Thursday,March,12,0
 12:25:14,12:28:43,F,Voltage Check +3V3,Thursday,March,12,0
@@ -911,7 +908,6 @@ Test Start Time,Test End Time,Result,Failed Test Case,Day of Week,Month,Hour,Fal
 09:14:50,09:15:51,F,RS485 COMMS CHECK,Thursday,November,9,0
 12:26:50,12:27:15,F,Load Shipping Code,Thursday,November,12,1
 12:31:33,12:32:01,F,Load Shipping Code,Thursday,November,12,1
-13:56:20,13:57:10,E,,Thursday,November,13,1
 14:00:22,14:01:15,F,RS485 COMMS CHECK,Thursday,November,14,1
 14:54:46,15:00:26,F,Check Input1 SC,Thursday,November,14,1
 15:12:10,15:17:40,F,Check Key Switch ON,Thursday,November,15,1
