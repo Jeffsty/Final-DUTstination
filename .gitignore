@@ -1,2 +1,9 @@
 MLP.py
 RF.py
+encoding.py
+MLP_all_tests.py
+mlp_several_evaluation_metrics.py
+rf_with_hold_out_set.py
+mlp_with_hold_out_set.py
+shufflingandsmote.py
+EDA.py
