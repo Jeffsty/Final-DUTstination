@@ -10,10 +10,10 @@ from imblearn.over_sampling import SMOTE
 chosen_data_set = input("1. All Tests Data\n"
 "2. First Test Only\n")
 if chosen_data_set == "1":
-    file_name = "Consolidated_All_Tests_Data.csv"
+    file_name = "consolidated_all_tests_data.csv"
 elif chosen_data_set == "2":
-    file_name = "Consolidated_First_Test_Only_Data.csv"
-df = pd.read_csv(f'./Consolidated_Data/{file_name}')
+    file_name = "consolidated_first_test_only_data.csv"
+df = pd.read_csv(f'./consolidated_data/{file_name}')
 
 # Drop start and end time columns
 df = df.drop(['Test Start Time', 'Test End Time'], axis=1)
@@ -103,7 +103,7 @@ def print_metrics(name, y_true, y_pred, y_prob):
     print(f"Recall:    {recall_score(y_true, y_pred):.3f}")
     print(f"F1:        {f1_score(y_true, y_pred):.3f}")
     print(f"ROC AUC:   {roc_auc_score(y_true, y_prob):.3f}")
-    print(f"Classification Report: {classification_report(y_true, y_pred)}")
+    print(f"Classification Report:\n{classification_report(y_true, y_pred)}")
     print(f"Confusion Matrix:\n{confusion_matrix(y_true, y_pred)}")
     print(f"Number incorrect: {np.sum(y_pred != y_true)}")
     print(f"Percent Incorrect: {(np.sum(y_true != y_pred) / len(y_pred)) * 100}")
