@@ -127,6 +127,10 @@ def print_metrics(name, y_true, y_pred, y_prob):
     print(f"Confusion Matrix:\n{confusion_matrix(y_true, y_pred)}")
     print(f"Number incorrect: {np.sum(y_pred != y_true)}")
     print(f"Percent Incorrect: {(np.sum(y_true != y_pred) / len(y_pred)) * 100}")
+    print(f"True Negatives (TN): {confusion_matrix(y_true, y_pred)[0, 0]}")
+    print(f"False Positives (FP): {confusion_matrix(y_true, y_pred)[0, 1]}")
+    print(f"False Negatives (FN): {confusion_matrix(y_true, y_pred)[1, 0]}")
+    print(f"True Positives (TP): {confusion_matrix(y_true, y_pred)[1, 1]}")
 
 # 16. Print results for all models
 print_metrics("Random Forest (Default)", y_test, y_pred_rf_default, y_prob_rf_default)
@@ -137,70 +141,4 @@ print_metrics("MLP (Tuned)", y_test, y_pred_mlp_tuned, y_prob_mlp_tuned)
 # Optional: print best parameters
 print("\nBest RF hyperparameters:", search_rf.best_params_)
 print("Best MLP hyperparameters:", search_mlp.best_params_)
-
-
-print("\n\n\n\n--------------------------------------------------\n\n\n\n")
-
-
-
-
-"""
-results = {
-    "Default": [
-        accuracy_score(y_test, y_pred_default),
-        precision_score(y_test, y_pred_default),
-        recall_score(y_test, y_pred_default),
-        f1_score(y_test, y_pred_default),
-        roc_auc_score(y_test, y_prob_default),
-        confusion_matrix(y_test, y_pred_default),
-        np.sum(y_test != y_pred_default),
-        (np.sum(y_test != y_pred_default) / len(y_pred_default)) * 100
-    ],
-    "Tuned": [
-        accuracy_score(y_test, y_pred_tuned),
-        precision_score(y_test, y_pred_tuned),
-        recall_score(y_test, y_pred_tuned),
-        f1_score(y_test, y_pred_tuned),
-        roc_auc_score(y_test, y_prob_tuned),
-        confusion_matrix(y_test, y_pred_tuned),
-        np.sum(y_test != y_pred_tuned),
-        (np.sum(y_test != y_pred_tuned) / len(y_pred_tuned)) * 100
-    ]
-}
-
-metrics = ["Accuracy", "Precision", "Recall", "F1", "ROC_AUC", "Confusion Matrix", "Incorrect Predictions", "Incorrect Predictions %"]
-results_df = pd.DataFrame(results, index=metrics)
-print(results_df)
-
-incorrect_predictions_default = np.sum(y_test != y_pred_default)
-total_predictions = len(y_pred_default)
-print(f"\nNumber of Incorrect Predictions: {incorrect_predictions_default} out of {total_predictions} total predictions.")
-print(f"This is {incorrect_predictions_default / total_predictions:.2%} of the test set.")
-print(total_predictions)
-
-incorrect_predictions_tuned = np.sum(y_test != y_pred_tuned)
-print(f"\nNumber of Incorrect Predictions: {incorrect_predictions_tuned} out of {total_predictions} total predictions.")
-print(f"This is {incorrect_predictions_tuned / total_predictions:.2%} of the test set.")
-print(total_predictions)
-"""
-
-"""
-print("Accuracy:", accuracy_score(y_test, y_pred))
-print("Precision:", precision_score(y_test, y_pred))
-print("Recall:", recall_score(y_test, y_pred))
-print("F1 Score:", f1_score(y_test, y_pred))
-print("ROC AUC:", roc_auc_score(y_test, y_prob))
-
-# confusion matrix stuff
-
-print("Confusion Matrix:")
-print(confusion_matrix(y_test, y_pred))
-
- # --- NEW: Calculate and print number of incorrect predictions ---
-incorrect_predictions = np.sum(y_test != y_pred)
-total_predictions = len(y_pred)
-print(f"\nNumber of Incorrect Predictions: {incorrect_predictions} out of {total_predictions} total predictions.")
-print(f"This is {incorrect_predictions / total_predictions:.2%} of the test set.")
-
-#print("Classification report:\n", classification_report(y_test, y_pred))
-"""
+print("Best MLP model's actual iterations:", mlp_tuned.n_iter_)
