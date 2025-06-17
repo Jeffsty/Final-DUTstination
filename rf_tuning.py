@@ -3,7 +3,7 @@ import numpy as np
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.model_selection import train_test_split, StratifiedKFold, RandomizedSearchCV, GridSearchCV
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score, confusion_matrix
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score, confusion_matrix, classification_report
 from imblearn.over_sampling import SMOTE
 
 # Load the CSV file
@@ -103,6 +103,7 @@ def print_metrics(name, y_true, y_pred, y_prob):
     print(f"Recall:    {recall_score(y_true, y_pred):.3f}")
     print(f"F1:        {f1_score(y_true, y_pred):.3f}")
     print(f"ROC AUC:   {roc_auc_score(y_true, y_prob):.3f}")
+    print(f"Classification Report: {classification_report(y_true, y_pred)}")
     print(f"Confusion Matrix:\n{confusion_matrix(y_true, y_pred)}")
     print(f"Number incorrect: {np.sum(y_pred != y_true)}")
     print(f"Percent Incorrect: {(np.sum(y_true != y_pred) / len(y_pred)) * 100}")
