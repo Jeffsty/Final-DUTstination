@@ -55,7 +55,7 @@ X_train_bal, y_train_bal = smote.fit_resample(X_train_pre, y_train)
 cv = StratifiedKFold(n_splits=10, shuffle=True, random_state=42)
 
 # MultiLayer Perceptron: default hyperparameters
-mlp_default = MLPClassifier(random_state=42, max_iter=4000)
+mlp_default = MLPClassifier(random_state=42, max_iter=1000)
 mlp_default.fit(X_train_bal, y_train_bal)
 y_pred_mlp_default = mlp_default.predict(X_test_pre)
 y_prob_mlp_default = mlp_default.predict_proba(X_test_pre)[:, 1]
@@ -71,7 +71,7 @@ mlp_param_dist = {
     "learning_rate": ["constant", "adaptive"],
 }
 search_mlp_rand = RandomizedSearchCV(
-    MLPClassifier(random_state=42, max_iter=5000),
+    MLPClassifier(random_state=42, max_iter=1000),
     param_distributions=mlp_param_dist,
     n_iter=20,
     cv=cv,
@@ -86,7 +86,7 @@ y_prob_mlp_tuned_rand = mlp_tuned_rand.predict_proba(X_test_pre)[:, 1]
 
 # MultiLayer Perceptron: GridSearchCV hyperparameters
 search_mlp_grid = GridSearchCV(
-    MLPClassifier(random_state=42, max_iter=5000),
+    MLPClassifier(random_state=42, max_iter=1000),
     param_grid=mlp_param_dist,
     cv=cv,
     scoring="accuracy",

@@ -1,2 +1,3 @@
 mlp_tuning_with_results_csv_generation.py
 rf_tuning_with_results_csv_generation.py
+mlp_tuning_with_results_csv_generation_and_loss_curve.py
