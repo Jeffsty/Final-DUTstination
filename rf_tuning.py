@@ -73,7 +73,7 @@ search_rf_rand = RandomizedSearchCV(
     param_distributions=rf_param_dist,
     n_iter=20,
     cv=cv,
-    scoring="accuracy",
+    scoring="f1",
     random_state=42,
     n_jobs=-1
 )
@@ -87,7 +87,7 @@ search_rf_grid = GridSearchCV(
     RandomForestClassifier(random_state=42),
     param_grid=rf_param_dist,
     cv=cv,
-    scoring="accuracy",
+    scoring="f1",
     n_jobs=-1
 )
 search_rf_grid.fit(X_train_bal, y_train_bal)

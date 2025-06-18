@@ -75,7 +75,7 @@ search_mlp_rand = RandomizedSearchCV(
     param_distributions=mlp_param_dist,
     n_iter=20,
     cv=cv,
-    scoring="accuracy",
+    scoring="f1",
     random_state=42,
     n_jobs=-1
 )
@@ -89,7 +89,7 @@ search_mlp_grid = GridSearchCV(
     MLPClassifier(random_state=42, max_iter=1000),
     param_grid=mlp_param_dist,
     cv=cv,
-    scoring="accuracy",
+    scoring="f1",
     n_jobs=-1
 )
 search_mlp_grid.fit(X_train_bal, y_train_bal)
