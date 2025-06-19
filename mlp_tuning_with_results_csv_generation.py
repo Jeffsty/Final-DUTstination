@@ -4,9 +4,17 @@ import numpy as np
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.model_selection import train_test_split, StratifiedKFold, RandomizedSearchCV, GridSearchCV
 from sklearn.neural_network import MLPClassifier
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score, confusion_matrix, classification_report
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score, confusion_matrix, classification_report, roc_curve
 from imblearn.over_sampling import SMOTE
 import time
+import json
+
+def print_tpr_fpr_thresholds(y_true, y_prob, model_name):
+    fpr, tpr, thresholds = roc_curve(y_true, y_prob)
+    print(f"\n--- ROC Curve for {model_name} ---")
+    print("Threshold\tFPR\tTPR")
+    for thr, fp, tp in zip(thresholds, fpr, tpr):
+        print(f"{thr:.3f}\t{fp:.3f}\t{tp:.3f}")
 
 # Load the CSV file
 chosen_data_set = input("1. All Tests Data\n2. First Test Only\n")
@@ -84,6 +92,7 @@ results = []
 def collect_metrics(name, y_true, y_pred, y_prob, params, n_iter=None, search_time=None):
     cr = classification_report(y_true, y_pred, output_dict=True)
     cm = confusion_matrix(y_true, y_pred)
+    fpr, tpr, thresholds = roc_curve(y_true, y_prob)
     res = {
         "Model": name,
         "Accuracy": accuracy_score(y_true, y_pred),
@@ -100,7 +109,11 @@ def collect_metrics(name, y_true, y_pred, y_prob, params, n_iter=None, search_ti
         "Params": params,
         "n_iter": n_iter,
         "Search_Time_seconds": search_time,
-        "Classification_Report": cr
+        "Classification_Report": cr,
+        "ROC_FPRs": json.dumps(list(fpr)),
+        "ROC_TPRs": json.dumps(list(tpr)),
+        "ROC_Thresholds": json.dumps(list(thresholds)),
+        "Probability_Scores": json.dumps(list(y_prob)),
     }
     return res
 
@@ -177,7 +190,7 @@ print("saving results to csv")
 
 # Save results to CSV
 os.makedirs("results", exist_ok=True)
-csv_filename = f"results/mlp_results_{dataset_name}.csv"
+csv_filename = f"results/f1_scoring/mlp_results_{dataset_name}.csv"
 
 # Flatten classification report for saving
 flat_results = []
