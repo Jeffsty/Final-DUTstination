@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import os
 
 # Results CSV path
-csv_path = "results/dummy_results_first_test_only.csv"  
+csv_path = "results/f1_scoring/combined_results_first_test_only.csv"  
 
 # Load results
 df = pd.read_csv(csv_path)
